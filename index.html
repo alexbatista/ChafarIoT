@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="App/materialize/css/materialize.min.css">
+    <title>ChafarIoT - Sistema de controle de consumo de água</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    <div class="card-panel teal lighten-2">This is a card panel with a teal lighten-2 class</div>
+    <a class="btn" onclick="Materialize.toast('I am a toast', 4000)">Toast!</a>
+
+    <button id="new-window">New Window</button>
+  </body>
+  <script>window.$ = window.jQuery = require('jquery');</script>
+  <script>
+    // You can also require other files to run in this process
+    require('./App/js/app.js')
+    require('./App/materialize/js/materialize.min.js')
+  </script>
+</html>

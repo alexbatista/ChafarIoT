@@ -1,0 +1,24 @@
+{
+  "name": "chafariot",
+  "version": "1.0.0",
+  "description": "Versão 1.0 do sistema de controle de consumo de água para chafariz",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chafariz",
+    "iot",
+    "internet",
+    "things"
+  ],
+  "author": "Alex Batista, Matheus Tavares, Victor Oliveira",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
