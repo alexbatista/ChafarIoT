@@ -15,7 +15,8 @@ function createWindow () {
 
   var windowOptions = {
       width: 1080,
-      minWidth: 680,
+      minWidth: 900,
+      minHeight: 600,
       height: 840
   }
   if (process.platform === 'linux') {

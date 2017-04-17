@@ -1,0 +1,35 @@
+header{
+  position: relative;
+}
+nav.aside-nav {
+  height: 100%;
+  position: fixed;
+  width: 25%;
+  text-align: center;
+}
+nav.aside-nav ul li{
+  display: block;
+  clear: both !important;
+  float: none;
+  width: 100%;
+}
+.logotipo{
+  width: 100%;
+}
+main {
+    margin-top: 3em;
+}
+
+/*configuration classes*/
+.no-padding {
+    padding: 0 !important;
+}
+.no-border{
+  border: none;
+}
+.blue-darken-4-border,.blue-darken-4-border div{
+  border-color: #0d47a1;
+}
+/*.blue-darken-4-border div{
+  border-bottom: 1px solid #0d47a1;
+}*/
