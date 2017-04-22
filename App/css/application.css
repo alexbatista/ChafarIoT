@@ -33,3 +33,22 @@ main {
 /*.blue-darken-4-border div{
   border-bottom: 1px solid #0d47a1;
 }*/
+
+
+
+/*New Client page*/
+#save-new-client{
+  width: 100%;
+}
+
+/*New Employee page*/
+#save-new-employee{
+  width: 100%;
+}
+
+#save-new-order{
+  width: 100%;
+}
+#save-new-recipient{
+  width: 100%;
+}

@@ -1,4 +1,7 @@
 const electron = require('electron')
+var sqlite3 = require('sqlite3').verbose()
+var db = new sqlite3.Database('mydb.db')
+
 // Module to control application life.
 const app = electron.app
 // Module to create native browser window.
@@ -27,7 +30,7 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
+    pathname: path.join(__dirname, './App/app.html'),
     protocol: 'file:',
     slashes: true
   }))
@@ -66,5 +69,16 @@ app.on('activate', function () {
   }
 })
 
+db.serialize(function() {
+
+    db.run("CREATE TABLE if not exists client (info TEXT)");
+    db.run("CREATE TABLE if not exists orders (info TEXT)");
+
+
+    db.each("SELECT rowid AS id, info FROM client", function(err, row) {
+        console.log(row.id + ": " + row.info);
+        console.error(err);
+    });
+});
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.

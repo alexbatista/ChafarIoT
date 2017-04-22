@@ -1,0 +1,53 @@
+<div id="pedidos">
+  <div class="row">
+    <div class="col s12">
+      <h3 style="text-align: center;">Novo Pedido</h3>
+    </div>
+  </div>
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input type="text" id="autocomplete-input" class="autocomplete">
+              <label for="autocomplete-input">Nome do Cliente</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s8">
+          <input id="endereco" type="text" class="validate">
+          <label for="endereco">Token</label>
+        </div>
+        <div class="input-field col s4">
+           <input id="data" type="date" class="datepicker">
+          <!-- <label for="data">Data</label> -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <h5>Recipientes</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s3">
+          <p>
+            <input type="checkbox" id="recipiente_1" />
+            <label for="recipiente_1">Galão de água do tipo tal</label>
+          </p>
+        </div>
+        <div class="input-field col s3">
+          <input id="qtd_recipiente_1" type="number" class="validate">
+          <label for="qtd_recipiente_1">Quantidade</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s3 offset-s9">
+          <button class="btn waves-effect waves-light" id="save-new-order" type="submit" name="action">Salvar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

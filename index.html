@@ -2,98 +2,58 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="App/materialize/css/materialize.min.css">
-    <link rel="stylesheet" href="App/css/application.css">
-    <title>ChafarIoT - Sistema de controle de consumo de água</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="App/materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="App/css/application.css">
+  <link rel="stylesheet" href="App/css/login.css">
+  <title>ChafarIoT - Sistema de controle de consumo de água</title>
 </head>
 
 <body>
-    <div class="row">
-        <div class="col s3 no-padding">
-            <header>
-                <nav class="aside-nav light-blue darken-3">
-                    <a href="#"><img class="logotipo" src="App/img/chafarIoT.png" alt=""></a>
-                    <ul class="collapsible blue-darken-4-border" data-collapsible="accordion">
-                        <li>
-                            <div class="collapsible-header light-blue darken-3">Clientes</div>
-                            <div class="collapsible-body light-blue darken-2">
-                              <ul>
-                                <li><a href="#">Registrar</a></li>
-                                <li><a href="#">Listar Todos</a></li>
-                              </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header light-blue darken-3">Pedidos</div>
-                            <div class="collapsible-body light-blue darken-2">
-                              <ul>
-                                <li><a href="#">Registrar</a></li>
-                                <li><a href="#">Listar Todos</a></li>
-                              </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header light-blue darken-3">Relatórios</div>
-                            <div class="collapsible-body light-blue darken-2">
-                              <ul>
-                                <li><a href="#">Registrar</a></li>
-                                <li><a href="#">Listar Todos</a></li>
-                              </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+  <div class="row">
+    <div class="col s12">
+      <main class="main-login">
+        <div class="row">
+          <form class="col s4 offset-s4">
+            <div class="row">
+              <div class="col s12">
+                <img id="logo" src="App/img/logo.png" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="login" type="text" class="validate">
+                <label for="login">Login</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" type="password" class="validate">
+                <label for="password">Senha</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Entrar</button>
+              </div>
+            </div>
+          </form>
         </div>
-        <div class="col s9">
-            <main>
-                <div class="row">
-                    <form class="col s12">
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                                <label for="first_name">Nome do Cliente</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <input id="last_name" type="text" class="validate">
-                                <label for="last_name">CPF</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="email" type="email" class="validate">
-                                <label for="email">Email</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col s3 offset-s9">
-                                <button class="btn waves-effect waves-light" type="submit" name="action">Salvar
-                                    <i class="material-icons right">send</i>
-                                  </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <!-- All of the Node.js APIs are available in this renderer process. -->
-                        <a class="btn light-blue darken-3" onclick="Materialize.toast('Usuário salvo com sucesso!!', 4000)">Toast!</a>
-                    </div>
-                </div>
-            </main>
-        </div>
+        <!-- All of the Node.js APIs are available in this renderer process. -->
+        <!-- <a class="btn light-blue darken-3" onclick="Materialize.toast('Usuário salvo com sucesso!!', 4000)">Toast!</a> -->
+      </main>
     </div>
+  </div>
 
-    <!-- <button id="new-window">New Window</button> -->
+  <!-- <button id="new-window">New Window</button> -->
 </body>
 <script>
-    window.$ = window.jQuery = require('jquery');
+  window.$ = window.jQuery = require('jquery');
 </script>
 <script>
-    // You can also require other files to run in this process
-    // require('./App/js/app.js')
-    require('./App/materialize/js/materialize.min.js')
+  // You can also require other files to run in this process
+  // require('./App/js/app.js')
+  require('./App/materialize/js/materialize.min.js')
 </script>
 
 </html>

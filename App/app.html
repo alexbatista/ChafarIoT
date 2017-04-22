@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="css/application.css">
+    <link rel="import" href="sections/clientes_template.html" id="link_clientes">
+    <link rel="import" href="sections/funcionarios_template.html" id="link_funcionarios">
+    <link rel="import" href="sections/pedidos_template.html" id="link_pedidos">
+    <link rel="import" href="sections/recipientes_template.html" id="link_recipientes">
+    <title>ChafarIoT - Sistema de controle de consumo de água</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col s3 no-padding">
+            <header>
+                <nav class="aside-nav light-blue darken-3">
+                    <a href="#"><img class="logotipo" src="img/chafarIoT.png" alt=""></a>
+                    <ul class="collapsible blue-darken-4-border" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header light-blue darken-3">Clientes</div>
+                            <div class="collapsible-body light-blue darken-2 no-padding">
+                              <ul>
+                                <li><a id="registrar_clientes" href="#">Registrar</a></li>
+                                <li><a href="#">Listar Todos</a></li>
+                              </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header light-blue darken-3">Pedidos</div>
+                            <div class="collapsible-body light-blue darken-2 no-padding">
+                              <ul>
+                                <li><a id="registrar_pedidos" href="#">Registrar</a></li>
+                                <li><a href="#">Listar Todos</a></li>
+                              </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header light-blue darken-3">Recipientes</div>
+                            <div class="collapsible-body light-blue darken-2 no-padding">
+                              <ul>
+                                <li><a id="registrar_recipientes" href="#">Registrar</a></li>
+                                <li><a href="#">Listar Todos</a></li>
+                              </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header light-blue darken-3">Funcionários</div>
+                            <div class="collapsible-body light-blue darken-2 no-padding">
+                              <ul>
+                                <li><a id="registrar_funcionarios" href="#">Registrar</a></li>
+                                <li><a href="#">Listar Todos</a></li>
+                              </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="col s9">
+            <main></main>
+        </div>
+    </div>
+
+    <!-- <button id="new-window">New Window</button> -->
+</body>
+<script>
+    window.$ = window.jQuery = require('jquery');
+</script>
+<script>
+    // You can also require other files to run in this process
+    // require('./App/js/app.js')
+    require('./app.js')
+    require('./materialize/js/materialize.min.js')
+</script>
+</html>
